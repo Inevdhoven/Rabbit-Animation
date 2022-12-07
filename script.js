@@ -23,7 +23,7 @@ function speelSlapen() {
 }
 
 video.play().then(function() {
-    // Automatic playback started!
+    console.log("het werkt");
 }).catch(function(error) {
-    // Automatic playback failed.
+    console.log("het werkt niet");
 });
