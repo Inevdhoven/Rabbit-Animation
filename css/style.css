@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vh;
+    overflow: hidden;
+}
+
+section {
+    position: relative;
+}
+
+video {
+    display: block;
+    margin: 0 auto;
+    width: 100vw;
+    animation: video-animatie 2s 1;
+}
+
+@keyframes video-animatie {
+  0%   { opacity: 0%; }
+  100% { opacity: 100%; }
+}
+
+section > div {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    animation: knop-animatie 2s 1;
+}
+
+div button {
+    width: 6em;
+    height: 6em;
+    padding: 0;
+    border: none;
+    border-radius: 1em;
+    margin: 1.2em 0 1em 4.8em;
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    color: transparent;
+    cursor: pointer;
+}
+
+div video {
+    width: 5em;
+    height: 5em;
+    margin: 1em 0 1em 4em;
+    border-radius: 1em;
+    transition: all .3s ease-in-out;
+}
+
+@keyframes knop-animatie {
+  0%   { opacity: 0%; }
+  50%   { opacity: 0%; }
+  100% { opacity: 100%; }
+}
+
+div button:hover + video{
+    transform: scale(1.2);    
+}
