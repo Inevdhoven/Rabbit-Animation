@@ -21,3 +21,11 @@ function speelSlapen() {
     video.src = "videos/konijn_slapen_klaar.mp4";
     console.log('sup slapen');
 }
+
+if (video.play() !== undefined) {
+    video.play().then(function() {
+      // Automatic playback started!
+    }).catch(function(error) {
+      // Automatic playback failed.
+    });
+}
