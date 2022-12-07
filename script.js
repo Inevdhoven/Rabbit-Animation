@@ -22,8 +22,10 @@ function speelSlapen() {
     console.log('sup slapen');
 }
 
-video.play().then(function() {
-    console.log("het werkt");
-}).catch(function(error) {
-    console.log("het werkt niet");
-});
+if (video.play() !== undefined) {
+    video.play().then(function() {
+      // Automatic playback started!
+    }).catch(function(error) {
+      // Automatic playback failed.
+    });
+}
