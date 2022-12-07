@@ -53,20 +53,6 @@ section div div:first-of-type {
     height: 112px;
 }
 
-section div div:first-of-type button {
-    width: 5em;
-    height: 5em;
-    border-radius: 1em;
-    margin: 1.2em 0 1em 4em;
-    background-color: #fff;
-    color: #2a2a2a;
-    font-family: Poppins;
-    font-weight: 700;
-    font-size: 1em;
-    transition: all .3s ease-in-out;
-    overflow-wrap: break-word;
-}
-
 div video {
     width: 5em;
     height: 5em;
@@ -81,7 +67,6 @@ div video {
   100% { opacity: 100%; }
 }
 
-div button:hover + video,
-div button:hover {
+div button:hover + video {
     transform: scale(1.2);    
 }
