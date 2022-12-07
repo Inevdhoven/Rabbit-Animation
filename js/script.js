@@ -3,12 +3,6 @@ var buttonEten = document.querySelector('section > div div:nth-of-type(2) button
 var buttonSlapen = document.querySelector('section > div div:nth-of-type(3) button');
 var video = document.querySelector('section > video');
 
-var setTimeout;
-
-setTimeout(function() {
-    video.muted = false;
-}, 10);
-
 buttonSpringen.addEventListener('click', speelSpringen);
 buttonEten.addEventListener('click', speelEten);
 buttonSlapen.addEventListener('click', speelSlapen);
