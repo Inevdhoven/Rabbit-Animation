@@ -3,6 +3,8 @@ var buttonEten = document.querySelector('section > div div:nth-of-type(2) button
 var buttonSlapen = document.querySelector('section > div div:nth-of-type(3) button');
 var video = document.querySelector('section > video');
 
+video.muted = !video.muted;
+
 buttonSpringen.addEventListener('click', speelSpringen);
 buttonEten.addEventListener('click', speelEten);
 buttonSlapen.addEventListener('click', speelSlapen);
@@ -22,10 +24,3 @@ function speelSlapen() {
     console.log('sup slapen');
 }
 
-if (video.play() !== undefined) {
-    video.play().then(function() {
-      // Automatic playback started!
-    }).catch(function(error) {
-      // Automatic playback failed.
-    });
-}
